@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-Light-BF64d4595396c6d.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-LightItalic-BF64d4595380ee0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-Regular-BF64d45952e54c1.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-Italic-BF64d4595396170.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-Medium-BF64d4595383d81.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-MediumItalic-BF64d459537767c.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-Bold-BF64d45953acd04.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-BoldItalic-BF64d45953b4a19.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-ExtraBold-BF64d45953a17ee.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bt Beau Sans';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/assets/fonts/BT-BeauSans-ExtraBoldItalic-BF64d45953a22c9.ttf') format('truetype');
+}
