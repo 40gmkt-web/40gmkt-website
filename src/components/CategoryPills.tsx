@@ -8,7 +8,7 @@ export const CategoryPills: React.FC = () => {
       <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         {/* Left Column: Heading & Copy */}
         <div className="lg:col-span-6 space-y-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-brand-navy leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md-text-5xl font-light text-brand-navy leading-tight tracking-tight">
             Your business <br className="hidden sm:inline" />
             <span className="font-semibold text-brand-navy">growth begins here...</span>
           </h2>
@@ -38,37 +38,32 @@ export const CategoryPills: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column: 3 Overlapping or Side-by-side Circular Badges */}
-        <div className="lg:col-span-6 flex flex-wrap sm:flex-nowrap items-center justify-center gap-4 sm:gap-6 pt-4 lg:pt-0">
-          {/* Local Business Circle */}
-          <Link
-            to="/localbusiness"
-            className="group w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full border-2 border-brand-orange flex items-center justify-center p-4 text-center transition-all duration-300 hover:scale-105 hover:bg-brand-orange/5 hover:shadow-lg"
-          >
-            <span className="text-brand-orange text-sm sm:text-base md:text-lg font-medium leading-tight group-hover:font-semibold">
-              local <br />business
-            </span>
-          </Link>
-
-          {/* Marketplace Business Circle */}
-          <Link
-            to="/marketplace"
-            className="group w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full border-2 border-brand-navy flex items-center justify-center p-4 text-center transition-all duration-300 hover:scale-105 hover:bg-brand-navy/5 hover:shadow-lg"
-          >
-            <span className="text-brand-navy text-sm sm:text-base md:text-lg font-medium leading-tight group-hover:font-semibold">
-              marketplace <br />business
-            </span>
-          </Link>
-
-          {/* Branding Circle */}
-          <a
-            href="#branding"
-            className="group w-32 h-32 sm:w-36 sm:h-36 md:w-44 md:h-44 rounded-full border-2 border-[#DECEB9] flex items-center justify-center p-4 text-center transition-all duration-300 hover:scale-105 hover:bg-[#DECEB9]/15 hover:shadow-lg"
-          >
-            <span className="text-[#BCA389] text-sm sm:text-base md:text-lg font-medium leading-tight group-hover:font-semibold">
-              branding
-            </span>
-          </a>
+        {/* Right Column: Intersecting Circles Graphic (teste40g-website.png) with clickable hotspots */}
+        <div className="lg:col-span-6 relative flex items-center justify-center pt-4 lg:pt-0">
+          <div className="relative w-full max-w-[560px]">
+            <img
+              src="/assets/images/teste40g-website.png"
+              alt="40g Services: Local Business, Marketplace Business, Branding"
+              className="w-full h-auto object-contain transition-transform duration-300 hover:scale-[1.02]"
+              loading="lazy"
+            />
+            {/* Clickable hotspots over the Venn circles */}
+            <Link
+              to="/localbusiness"
+              className="absolute left-0 top-0 w-[38%] h-full rounded-full cursor-pointer z-10"
+              title="Local Business"
+            />
+            <Link
+              to="/marketplace"
+              className="absolute left-[31%] top-0 w-[38%] h-full rounded-full cursor-pointer z-10"
+              title="Marketplace Business"
+            />
+            <a
+              href="#specialized"
+              className="absolute right-0 top-0 w-[38%] h-full rounded-full cursor-pointer z-10"
+              title="Branding"
+            />
+          </div>
         </div>
       </div>
     </section>
