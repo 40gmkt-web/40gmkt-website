@@ -3,12 +3,12 @@ import React from 'react';
 export const HomeBento: React.FC = () => {
   return (
     <section className="py-8 md:py-14 px-4 sm:px-6">
-      <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+      <div className="max-w-[1260px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
         
-        {/* Left Column: Save time, money and frustration */}
-        <div className="lg:col-span-5 flex flex-col">
-          <div className="bg-brand-navy text-white rounded-[32px] sm:rounded-[40px] md:rounded-[44px] p-8 sm:p-10 md:p-12 lg:p-14 shadow-md flex flex-col justify-center min-h-[280px] sm:min-h-[340px] md:min-h-[380px]">
-            <h2 className="text-3xl sm:text-4xl md:text-[46px] lg:text-[50px] leading-[1.18] tracking-[-0.03em] font-light">
+        {/* Left Column: Save time, money and frustration - EXTENDED FULL HEIGHT */}
+        <div className="lg:col-span-5 flex flex-col h-full">
+          <div className="bg-brand-navy text-white rounded-[32px] sm:rounded-[40px] md:rounded-[44px] p-8 sm:p-10 md:p-12 lg:p-14 shadow-md flex flex-col justify-center h-full min-h-[380px] lg:min-h-[620px]">
+            <h2 className="text-3xl sm:text-4xl md:text-[46px] lg:text-[52px] leading-[1.18] tracking-[-0.03em] font-light">
               <span className="italic">Save your </span>
               <span className="font-normal">time,</span><br />
               <span className="font-normal">money </span>
@@ -19,7 +19,7 @@ export const HomeBento: React.FC = () => {
         </div>
 
         {/* Right Column: Orange Card on top, Woman + 40g Graphic below */}
-        <div className="lg:col-span-7 flex flex-col gap-6 sm:gap-8">
+        <div className="lg:col-span-7 flex flex-col gap-6 sm:gap-8 justify-between">
           {/* Top Wide Orange Card */}
           <div className="bg-brand-orange text-white rounded-[32px] sm:rounded-[40px] md:rounded-[44px] p-8 sm:p-10 md:p-12 lg:p-14 shadow-md flex flex-col justify-center min-h-[200px] sm:min-h-[230px]">
             <h2 className="text-3xl sm:text-4xl md:text-[46px] lg:text-[50px] leading-[1.18] tracking-[-0.03em] font-light">
