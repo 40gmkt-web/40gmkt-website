@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { NavProvider, useNav } from './context/NavContext';
 import { Navbar } from './components/Navbar';
 import { MobileMenu } from './components/MobileMenu';
 import { Footer } from './components/Footer';
@@ -25,20 +26,20 @@ const ScrollToTop = () => {
   return null;
 };
 
-export const AppContent: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const AppContent: React.FC = () => {
+  const { mobileMenuOpen, closeMobileMenu } = useNav();
 
   return (
     <div className="flex flex-col min-h-screen bg-white text-brand-dark selection:bg-brand-orange selection:text-white">
       <ScrollToTop />
       
-      {/* Floating Navbar */}
-      <Navbar onOpenMobileMenu={() => setMobileMenuOpen(true)} />
+      {/* Sticky navbar só visível ao rolar a página para além do Hero */}
+      <Navbar />
 
       {/* Mobile Drawer Menu */}
       <MobileMenu
         isOpen={mobileMenuOpen}
-        onClose={() => setMobileMenuOpen(false)}
+        onClose={closeMobileMenu}
       />
 
       {/* Main Page Content */}
@@ -60,7 +61,9 @@ export const AppContent: React.FC = () => {
 export const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <AppContent />
+      <NavProvider>
+        <AppContent />
+      </NavProvider>
     </BrowserRouter>
   );
 };

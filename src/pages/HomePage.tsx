@@ -18,7 +18,8 @@ export const HomePage: React.FC = () => {
         title={
           <>
             Our goal is to make your <br />
-            <span className="font-semibold">business grow even more</span>
+            <span className="font-normal">business grow </span>
+            <span className="italic font-light">even more</span>
           </>
         }
         ctaText="Book a Call"
