@@ -83,12 +83,14 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
             >
               Local Business
             </Link>
-            <a
-              href="/#branding"
-              className="transition-colors duration-200 hover:text-brand-orange text-white"
+            <Link
+              to="/branding"
+              className={`transition-colors duration-200 hover:text-brand-orange ${
+                isActive('/branding') ? 'text-brand-orange font-medium' : 'text-white'
+              }`}
             >
               Branding
-            </a>
+            </Link>
           </nav>
 
           {/* Circular Hamburger Menu Button */}

@@ -27,9 +27,9 @@ export const Footer: React.FC = () => {
             <Link to="/localbusiness" className="hover:text-brand-orange transition-colors">
               Local Business
             </Link>
-            <a href="/#branding" className="hover:text-brand-orange transition-colors">
+            <Link to="/branding" className="hover:text-brand-orange transition-colors">
               Branding
-            </a>
+            </Link>
           </nav>
 
           {/* CTA */}

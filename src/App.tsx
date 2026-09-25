@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { MarketplacePage } from './pages/MarketplacePage';
 import { LocalBusinessPage } from './pages/LocalBusinessPage';
+import { BrandingPage } from './pages/BrandingPage';
 
 // Scroll to top automatically on route changes
 const ScrollToTop = () => {
@@ -48,6 +49,7 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/marketplace" element={<MarketplacePage />} />
           <Route path="/localbusiness" element={<LocalBusinessPage />} />
+          <Route path="/branding" element={<BrandingPage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
       </main>

@@ -58,8 +58,8 @@ export const CategoryPills: React.FC = () => {
               className="absolute left-[31%] top-0 w-[38%] h-full rounded-full cursor-pointer z-10"
               title="Marketplace Business"
             />
-            <a
-              href="#specialized"
+            <Link
+              to="/branding"
               className="absolute right-0 top-0 w-[38%] h-full rounded-full cursor-pointer z-10"
               title="Branding"
             />

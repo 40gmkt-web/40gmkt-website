@@ -27,7 +27,7 @@ const cards: CardItem[] = [
     id: 'branding',
     title: 'Branding',
     image: '/assets/images/specialized-branding.png',
-    link: '/#branding'
+    link: '/branding'
   },
   {
     id: 'products',

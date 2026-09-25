@@ -94,13 +94,15 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             Local Business
           </Link>
 
-          <a
-            href="/#branding"
+          <Link
+            to="/branding"
             onClick={onClose}
-            className="text-xl font-normal text-white/90 transition-all duration-200 hover:text-brand-orange hover:translate-x-1"
+            className={`text-xl font-normal transition-all duration-200 hover:text-brand-orange hover:translate-x-1 ${
+              location.pathname === '/branding' ? 'text-brand-orange font-medium' : 'text-white/90'
+            }`}
           >
             Branding
-          </a>
+          </Link>
 
           <a
             href="/#specialized"
